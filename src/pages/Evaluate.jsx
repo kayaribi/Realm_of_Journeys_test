@@ -129,7 +129,7 @@ function Evaluate() {
     <>
       <div
         style={{
-          backgroundImage: "url(./public/images/evaluate/message-bgc.png)",
+          backgroundImage: "url(images/evaluate/message-bgc.png)",
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "812px",
