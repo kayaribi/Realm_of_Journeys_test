@@ -9,7 +9,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import '../assets/scss/pages/evaluate.scss';
 
-const data = [
+const EvaluateData = [
   {
     id: 1,
     name: "Emma L.",
@@ -149,14 +149,14 @@ function Evaluate() {
               modules={[Navigation, Pagination, Mousewheel, Keyboard]}
             // modules={[Pagination]}
             >
-              {data.map((evaluate) => {
+              {EvaluateData.map((evaluate) => {
                 return (
                   <SwiperSlide key={evaluate.id}>
                     <div className="d-flex flex-column align-items-stretch h-100">
                       <div className="card card-custom px-6 py-4">
                         <div className="d-flex gap-1 pb-2">
                           {[...Array(evaluate.star)].map((_, i) => (
-                            <img key={i} src="./public/images/icon/star.svg" style={{ width: "16px", height: "15px" }} alt="star" />
+                            <img key={i} src="images/icon/star.svg" style={{ width: "16px", height: "15px" }} alt="star" />
                           ))}
                         </div>
                         <p className="fs-10 mb-auto text-neutral-black">
